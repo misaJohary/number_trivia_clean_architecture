@@ -5,18 +5,8 @@ abstract class Failure extends Equatable {
   List<Object?> get props => [];
 }
 
-class ServerFailure implements Failure {
-  @override
-  List<Object?> get props => [];
-
-  @override
-  bool? get stringify => true;
+class ServerFailure extends Failure {
 }
 
-class CacheFailure implements Failure {
-  @override
-  List<Object?> get props => [];
-
-  @override
-  bool? get stringify => true;
+class CacheFailure extends Failure {
 }
