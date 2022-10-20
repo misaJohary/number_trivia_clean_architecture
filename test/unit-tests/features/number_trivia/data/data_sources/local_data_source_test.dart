@@ -54,7 +54,7 @@ void main() {
     test('should cache the number trivia', () async {
       //arrange
       when(mockSharedPreferences.setString(
-              any, json.encode(tNumberTriviaModel.toJson())))
+              any, json.encode(tNumberTriviaModel.toJson(),),),)
           .thenAnswer((_) async => true);
       //act
       localDataSourceImp.cacheNumberTrivia(tNumberTriviaModel);

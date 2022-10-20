@@ -20,7 +20,7 @@ main(){
   });
 
   
-  final NumberTrivia tNumberTrivia = NumberTrivia(number: 1, text: 'test'); 
+  const NumberTrivia tNumberTrivia = NumberTrivia(number: 1, text: 'test'); 
 
   test('should get trivia for the repository', ()async{
     //Arrange
